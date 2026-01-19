@@ -10,7 +10,7 @@ class Solution(object):
         max_profit = 0
         min_price = prices[0]
 
-        for price in prices[1:]:
+        for price in prices:
             if price < min_price:
                 min_price = price
             else:
