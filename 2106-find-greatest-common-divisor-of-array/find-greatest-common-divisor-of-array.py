@@ -4,10 +4,9 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        max_num = max(nums)
         divisor = min(nums)
 
-        remainder = max_num % divisor
+        remainder = max(nums) % divisor
         if remainder == 0:
             return divisor
         while remainder > 0:
